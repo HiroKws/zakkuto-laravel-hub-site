@@ -23,17 +23,11 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('logmessage 毎分起動')
+        $schedule->command('logmessage タスク1')
             ->cron('* * * * *');
-        $schedule->command('logmessage 5分毎に起動')
-            ->everyFiveMinutes();
-        $schedule->command('logmessage 10分毎に起動')
-            ->everyTenMinutes();
-        $schedule->command('logmessage 30分毎に起動')
-            ->everyThirtyMinutes();
-        $schedule->command('logmessage 15分毎に起動')
-            ->cron('*/15 * * * *');
-        $schedule->command('logmessage 20分毎に起動')
-            ->cron('*/20 * * * *');
+        $schedule->command('logmessage タスク2')
+            ->cron('* * * * *');
+        $schedule->command('logmessage タスク3')
+            ->cron('* * * * *');
     }
 }
