@@ -7,9 +7,9 @@ use Illuminate\Console\Command;
 class Hello extends Command
 {
     protected $signature = 'hello:world '
-        .'{--N|name=世界 : 誰に向かって、挨拶してるんじゃ。}';
+        .'{--N|name=世界 : 相手の名前}';
 
-    protected $description = 'はじめの一歩、Hello Worldを出力する。';
+    protected $description = '丁寧なあいさつ。';
 
     public function __construct()
     {
@@ -18,6 +18,6 @@ class Hello extends Command
 
     public function handle()
     {
-        echo 'ちやーす、'.$this->option('name').'さん。'.PHP_EOL;
+        echo $this->option('name').'殿、ご無事で何より。'.PHP_EOL;
     }
 }
