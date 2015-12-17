@@ -2,11 +2,11 @@
 
 namespace App\Listeners;
 
-use App\Events\Reminder;
+use App\Events\ReminderInterface;
 
 class EchoEvent2
 {
-    public function handle(Reminder $event)
+    public function handle(ReminderInterface $event)
     {
         echo $event->time
             ->toDateTimeString()

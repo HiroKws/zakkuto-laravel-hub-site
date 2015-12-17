@@ -5,7 +5,7 @@ namespace App\Events;
 use Carbon\Carbon;
 use Illuminate\Queue\SerializesModels;
 
-class Reminder extends Event
+class Reminder extends Event implements ReminderInterface
 {
     use SerializesModels;
 
