@@ -7,7 +7,7 @@ use Illuminate\Console\Command;
 class Hello extends Command
 {
     protected $signature = 'hello:world '
-        .'{--j|japanese : 日本語表示オプション。}';
+        .'{--N|name=世界 : 誰に向かって、挨拶してるんじゃ。}';
 
     protected $description = 'はじめの一歩、Hello Worldを出力する。';
 
@@ -18,10 +18,6 @@ class Hello extends Command
 
     public function handle()
     {
-        if ($this->option('japanese')) {
-            echo 'こんにちは、世界さん！'.PHP_EOL;
-        } else {
-            echo 'Hello, World!!'.PHP_EOL;
-        }
+        echo 'ちやーす、'.$this->option('name').'さん。'.PHP_EOL;
     }
 }
