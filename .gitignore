@@ -8,3 +8,4 @@ Homestead.json
 make-zip.sh
 /storage/*.json
 .php_cs
+/database/database.sqlite

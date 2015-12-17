@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    \Mail::raw('本日は晴天なり', function ($message) {
+        $message->to('sample@example.com') // 送信先アドレス
+            ->subject('テスト送信');
+    });
+
+    return '送信しました。';
 });
