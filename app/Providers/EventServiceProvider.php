@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Events\Reminder;
+use App\Events\Reminder2;
 use App\Listeners\EchoEvent;
 use App\Listeners\EchoEvent2;
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
@@ -16,7 +17,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        Reminder::class => [EchoEvent::class, EchoEvent2::class],
+        Reminder::class  => [EchoEvent::class, EchoEvent2::class],
+        Reminder2::class => [EchoEvent2::class],
     ];
 
     /**
