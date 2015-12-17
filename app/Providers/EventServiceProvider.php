@@ -17,8 +17,9 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        Reminder::class  => [EchoEvent::class, EchoEvent2::class],
-        Reminder2::class => [EchoEvent2::class],
+        Reminder::class => [EchoEvent::class],
+#        Reminder::class  => [EchoEvent::class, EchoEvent2::class],
+#        Reminder2::class => [EchoEvent2::class],
     ];
 
     /**
