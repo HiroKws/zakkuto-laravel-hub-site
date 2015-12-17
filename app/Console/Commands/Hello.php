@@ -7,9 +7,9 @@ use Illuminate\Console\Command;
 class Hello extends Command
 {
     protected $signature = 'hello:world '
-        .'{--N|name=世界 : 相手の名前}';
+        .'{--a|add=* : 加算する数字。}';
 
-    protected $description = '丁寧なあいさつ。';
+    protected $description = '足し算計算機。';
 
     public function __construct()
     {
@@ -18,6 +18,10 @@ class Hello extends Command
 
     public function handle()
     {
-        echo $this->option('name').'殿、ご無事で何より。'.PHP_EOL;
+        $total = 0;
+        foreach ($this->option('add') as $value) {
+            $total += $value;
+        }
+        echo '合計：'.$total.PHP_EOL;
     }
 }
