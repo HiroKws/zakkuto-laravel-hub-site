@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 
 class Hello extends Command
 {
-    protected $signature = 'hello';
+    protected $signature = 'hello:world';
 
     protected $description = 'はじめの一歩、Hello Worldを出力する。';
 
