@@ -9,19 +9,19 @@ class PasswordController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
-    | Password Reset Controller
+    | パスワードリセットコントローラー
     |--------------------------------------------------------------------------
     |
-    | This controller is responsible for handling password reset requests
-    | and uses a simple trait to include this behavior. You're free to
-    | explore this trait and override any methods you wish to tweak.
+    | このコントローラーはパスワードリセットリクエストの処理に責任を持ち、その
+    | 振る舞いを取り込むために、シンプルなトレイトを使用しています。望み通りに
+    | 調整するため、このトレイトを使い、メソッドをオーバーライドしてください。
     |
     */
 
     use ResetsPasswords;
 
     /**
-     * Create a new password controller instance.
+     * 新しいパスワードコントローラーインスタンスの生成
      *
      * @return void
      */

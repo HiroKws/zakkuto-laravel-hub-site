@@ -11,7 +11,7 @@ use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 class Handler extends ExceptionHandler
 {
     /**
-     * A list of the exception types that should not be reported.
+     * レポートしない例外タイプのリスト
      *
      * @var array
      */
@@ -21,9 +21,9 @@ class Handler extends ExceptionHandler
     ];
 
     /**
-     * Report or log an exception.
+     * 例外をレポート、もしくはログ
      *
-     * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
+     * ここはSentryやBugsnagなどに例外を送るために良い場所
      *
      * @param  \Exception  $e
      * @return void
@@ -34,7 +34,7 @@ class Handler extends ExceptionHandler
     }
 
     /**
-     * Render an exception into an HTTP response.
+     * HTTPレスポンスに対応する例外をレンダー
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Exception  $e

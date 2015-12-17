@@ -12,19 +12,19 @@ class AuthController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
-    | Registration & Login Controller
+    | 登録／ログインコントローラー
     |--------------------------------------------------------------------------
     |
-    | This controller handles the registration of new users, as well as the
-    | authentication of existing users. By default, this controller uses
-    | a simple trait to add these behaviors. Why don't you explore it?
+    | このコントローラハンドラーは新ユーザーを登録し、同時に既存の
+    | ユーザーを認証します。デフォルトでこのコントローラーは振る舞いを
+    | 追加するためにシンプルなトレイトを使用します。試してみませんか？
     |
     */
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
     /**
-     * Create a new authentication controller instance.
+     * 新しい認証コントローラインスタンスの生成
      *
      * @return void
      */
@@ -34,7 +34,7 @@ class AuthController extends Controller
     }
 
     /**
-     * Get a validator for an incoming registration request.
+     * やって来た登録リクエストに対するバリデターを取得
      *
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
@@ -49,7 +49,7 @@ class AuthController extends Controller
     }
 
     /**
-     * Create a new user instance after a valid registration.
+     * 登録内容を確認後、新しいユーザーインスタンスを生成
      *
      * @param  array  $data
      * @return User

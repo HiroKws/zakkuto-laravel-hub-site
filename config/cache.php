@@ -4,12 +4,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Default Cache Store
+    | デフォルトキャッシュ保存場所
     |--------------------------------------------------------------------------
     |
-    | This option controls the default cache connection that gets used while
-    | using this caching library. This connection is used when another is
-    | not explicitly specified when executing a given caching function.
+    | このオプションはこのキャッシュライブラリで使用するデフォルトの
+    | キャッシュ接続を制御します。この接続はキャッシュ機能にどこへ
+    | キャッシュするのか、明白に指定されていない場合に使用されます。
     |
     */
 
@@ -17,12 +17,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Cache Stores
+    | キャッシュ保存場所
     |--------------------------------------------------------------------------
     |
-    | Here you may define all of the cache "stores" for your application as
-    | well as their drivers. You may even define multiple stores for the
-    | same cache driver to group types of items stored in your caches.
+    | ここでアプリケーションの全キャッシュ「保存場所」を定義し、
+    | 同時にドライバーを指定します。キャッシュに保存するアイテムのグループ
+    | タイプに対し、同じキャッシュドライバーを複数定義することもできます。
     |
     */
 
@@ -65,12 +65,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Cache Key Prefix
+    | キャッシュキープレフィックス
     |--------------------------------------------------------------------------
     |
-    | When utilizing a RAM based store such as APC or Memcached, there might
-    | be other applications utilizing the same cache. So, we'll specify a
-    | value to get prefixed to all our keys so we can avoid collisions.
+    | APCやMemcachedのようなRAMベースでの保存法を使用する場合、
+    | 他のアプリケーションも使用しているかも知れません。衝突を避けるために
+    | 全部のキーにプレフィックスをつけた値を指定します。
     |
     */
 

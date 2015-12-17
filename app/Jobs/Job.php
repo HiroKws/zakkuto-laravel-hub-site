@@ -8,12 +8,12 @@ abstract class Job
 {
     /*
     |--------------------------------------------------------------------------
-    | Queueable Jobs
+    | キューイング可能なジョブ
     |--------------------------------------------------------------------------
     |
-    | This job base class provides a central location to place any logic that
-    | is shared across all of your jobs. The trait included with the class
-    | provides access to the "onQueue" and "delay" queue helper methods.
+    | このジョブ基底クラスは全ジョブから共通に呼び出されるロジックを
+    | 設置する場所を提供しています。このクラスに含まれるトレイトは、
+    | "onQueue"と"delay"キューヘルパーメソッドへのアクセスを提供します。
     |
     */
 

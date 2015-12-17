@@ -4,14 +4,14 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Mail Driver
+    | メールドライバー
     |--------------------------------------------------------------------------
     |
-    | Laravel supports both SMTP and PHP's "mail" function as drivers for the
-    | sending of e-mail. You may specify which one you're using throughout
-    | your application here. By default, Laravel is setup for SMTP mail.
+    | メール送信のドライバーとしてSMTPとPHPの"mail"機能の二つをLaravelは
+    | サポートしています。アプリケーション全体で使用する方法を選び指定して
+    | ください。デフォルトではSMTPメールをセットしています。
     |
-    | Supported: "smtp", "mail", "sendmail", "mailgun", "mandrill", "ses", "log"
+    | サポートドライバー: "smtp", "mail", "sendmail", "mailgun", "mandrill", "ses", "log"
     |
     */
 
@@ -19,12 +19,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | SMTP Host Address
+    | SMTPホストアドレス
     |--------------------------------------------------------------------------
     |
-    | Here you may provide the host address of the SMTP server used by your
-    | applications. A default option is provided that is compatible with
-    | the Mailgun mail service which will provide reliable deliveries.
+    | アプリケーションで使用するSMTPサーバーのホストアドレスを指定します。
+    | デフォルトでは確実な配信サービスを提供しているMailgunメールサービス
+    | を使用するオプションを設定しています。
     |
     */
 
@@ -32,12 +32,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | SMTP Host Port
+    | SMTPホストポート
     |--------------------------------------------------------------------------
     |
-    | This is the SMTP port used by your application to deliver e-mails to
-    | users of the application. Like the host we have set this value to
-    | stay compatible with the Mailgun e-mail application by default.
+    | これはアプリケーションのユーザーにメールを送信するために使用される
+    | SMTPポートです。デフォルトでは、ホストと同様に、Mailgunメール
+    | アプリケーション向けに設定しています。
     |
     */
 
@@ -45,12 +45,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Global "From" Address
+    | グローバルな「送信元」アドレス
     |--------------------------------------------------------------------------
     |
-    | You may wish for all e-mails sent by your application to be sent from
-    | the same address. Here, you may specify a name and address that is
-    | used globally for all e-mails that are sent by your application.
+    | メールの送信元は全部同じメールアドレスに設定したいと思うはずです。
+    | アプリケーションから送信される全メールの送信元名とアドレスはここで
+    | 設定します。
     |
     */
 
@@ -58,12 +58,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | E-Mail Encryption Protocol
+    |  メール暗号化プロトコル
     |--------------------------------------------------------------------------
     |
-    | Here you may specify the encryption protocol that should be used when
-    | the application send e-mail messages. A sensible default using the
-    | transport layer security protocol should provide great security.
+    | アプリケーションがメールでメッセージを送信する時に使用されるべき
+    | 暗号化プロトコルをここで指定します。とても安全なトランスポート層の
+    | 暗号化プロトコルがデフォルトとして設定されています。
     |
     */
 
@@ -71,12 +71,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | SMTP Server Username
+    | SMTPサーバーユーザー名
     |--------------------------------------------------------------------------
     |
-    | If your SMTP server requires a username for authentication, you should
-    | set it here. This will get used to authenticate with your server on
-    | connection. You may also set the "password" value below this one.
+    | もしSMTPサーバーが認証でユーザー名を必要としているのでしたら、
+    | ここで設定してください。サーバーに接続する時の認証に使用されます。
+    | 更に"password"も、次のオプションで設定できます。
     |
     */
 
@@ -84,12 +84,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | SMTP Server Password
+    | SMTPサーバーパスワード
     |--------------------------------------------------------------------------
     |
-    | Here you may set the password required by your SMTP server to send out
-    | messages from your application. This will be given to the server on
-    | connection so that the application will be able to send messages.
+    | アプリケーションからSMTPサーバーにメッセージを送信する時に必要な
+    | パスワードをここで設定します。これはサーバーとの接続時に使用され、
+    | のアプリケーションからメッセージが送信できます。
     |
     */
 
@@ -97,12 +97,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Sendmail System Path
+    | Sendmailシステムパス
     |--------------------------------------------------------------------------
     |
-    | When using the "sendmail" driver to send e-mails, we will need to know
-    | the path to where Sendmail lives on this server. A default path has
-    | been provided here, which will work well on most of your systems.
+    | メールの送信に"sendmail"ドライバーを使用する場合、このサーバーで
+    | どこにSendmailがあるのか知る必要があります。ここで指定している
+    | デフォルトのパスはほとんどのシステムで上手く動作します。
     |
     */
 
@@ -110,12 +110,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Mail "Pretend"
+    | メール"Pretend"モード
     |--------------------------------------------------------------------------
     |
-    | When this option is enabled, e-mail will not actually be sent over the
-    | web and will instead be written to your application's logs files so
-    | you may inspect the message. This is great for local development.
+    | このオプションを有効にすると、Web上で本当に送信せず
+    | 内容を確認できるよう、代わりにアプリケーションの
+    | ログファイルに書き込みます。これはローカル開発時に便利です。
     |
     */
 

@@ -2,12 +2,12 @@
 
 /*
 |--------------------------------------------------------------------------
-| Model Factories
+| モデルファクトリー
 |--------------------------------------------------------------------------
 |
-| Here you may define all of your model factories. Model factories give
-| you a convenient way to create models for testing and seeding your
-| database. Just tell the factory how a default model should look.
+| ここに全部のモデルファクトリーを定義してください。モデルファクトリーは
+| テストのためにデータベースの初期値を用意したモデルを作成する便利な方法です。
+| モデルがどのように見えれば良いのかをファクトリーに指示するだけです。
 |
 */
 

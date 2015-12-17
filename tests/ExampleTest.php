@@ -7,7 +7,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 class ExampleTest extends TestCase
 {
     /**
-     * A basic functional test example.
+     * 基本的な機能テストの例
      *
      * @return void
      */

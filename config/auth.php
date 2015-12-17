@@ -4,14 +4,14 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Default Authentication Driver
+    | デフォルト認証ドライバー
     |--------------------------------------------------------------------------
     |
-    | This option controls the authentication driver that will be utilized.
-    | This driver manages the retrieval and authentication of the users
-    | attempting to get access to protected areas of your application.
+    | このオプションは認証で使用するドライバーを設定します。
+    | このドライバーはアプリケーションの保護領域へユーザーがアクセスする時の
+    | 認証とユーザーの取得を管理します。
     |
-    | Supported: "database", "eloquent"
+    | サポートドライバー： "database", "eloquent"
     |
     */
 
@@ -19,12 +19,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Authentication Model
+    | 認証モデル
     |--------------------------------------------------------------------------
     |
-    | When using the "Eloquent" authentication driver, we need to know which
-    | Eloquent model should be used to retrieve your users. Of course, it
-    | is often just the "User" model but you may use whatever you like.
+    | "Eloquent"認証ドライバーを使用する場合、ユーザー情報を取得する
+    | Eloquentモデルの指定が必要です。もちろん、通常は"User"モデル
+    | でしょうが、お好きなものをどうぞ。
     |
     */
 
@@ -32,12 +32,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Authentication Table
+    | 認証テーブル
     |--------------------------------------------------------------------------
     |
-    | When using the "Database" authentication driver, we need to know which
-    | table should be used to retrieve your users. We have chosen a basic
-    | default value but you may easily change it to any table you like.
+    | "Database"認証ドライバーを使用する場合、ユーザーを取得するための
+    | テーブルを指定する必要があります。基本的な値をデフォルトにしていますが、
+    | お好きなテーブル名へ簡単に変更できます。
     |
     */
 
@@ -45,16 +45,16 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Password Reset Settings
+    | パスワードリセット設定
     |--------------------------------------------------------------------------
     |
-    | Here you may set the options for resetting passwords including the view
-    | that is your password reset e-mail. You can also set the name of the
-    | table that maintains all of the reset tokens for your application.
+    | ここではパスワードリマインダーの設定を行います。それにはパスワード
+    | メールにリセットメールのビューも含まれます。また、リセット
+    | トークンを保存しておくためのテーブル名も指定可能です。
     |
-    | The expire time is the number of minutes that the reset token should be
-    | considered valid. This security feature keeps tokens short-lived so
-    | they have less time to be guessed. You may change this as needed.
+    | 有効時間の"expire"に指定する分数は、良く考えてください。
+    | このトークン保存時間はセキュリティー機能で、短い時間ほど
+    | 安全になります。ですが、必要に応じ変更可能です。
     |
     */
 

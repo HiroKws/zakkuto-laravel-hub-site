@@ -4,12 +4,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Default Session Driver
+    | デフォルトセッションドライバー
     |--------------------------------------------------------------------------
     |
-    | This option controls the default session "driver" that will be used on
-    | requests. By default, we will use the lightweight native driver but
-    | you may specify any of the other wonderful drivers provided here.
+    | このオプションはリクエストに対するデフォルトのセッションドライバーを
+    | 指定するためのものです。一番軽いネイティブドライバーを設定していますが
+    | 用意されている他の素晴らしいドライバーも使用できます。
     |
     | Supported: "file", "cookie", "database", "apc",
     |            "memcached", "redis", "array"
@@ -20,12 +20,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Session Lifetime
+    | セッション持続時間
     |--------------------------------------------------------------------------
     |
-    | Here you may specify the number of minutes that you wish the session
-    | to be allowed to remain idle before it expires. If you want them
-    | to immediately expire on the browser closing, set that option.
+    | ここでは何分間接続が無い場合にセッションを破棄するのかを
+    | 指定します。もしブラウザを閉じるか、時間切れならすぐに破棄したい
+    | 場合は、このオプションを設定してください。
     |
     */
 
@@ -35,12 +35,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Session Encryption
+    | セッション暗号化
     |--------------------------------------------------------------------------
     |
-    | This option allows you to easily specify that all of your session data
-    | should be encrypted before it is stored. All encryption will be run
-    | automatically by Laravel and you can use the Session like normal.
+    | このオプションは全セッションデーターを保存する前に、
+    | s暗号化することを簡単に指定できるように用意しています。Laravelにより
+    | 全部自動に暗号化されますので、普通にセッションを使用できます。
     |
     */
 
@@ -48,12 +48,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Session File Location
+    | セッションファイルの場所
     |--------------------------------------------------------------------------
     |
-    | When using the native session driver, we need a location where session
-    | files may be stored. A default has been set for you but a different
-    | location may be specified. This is only needed for file sessions.
+    | "file"セッションドライバーを使用する場合、そのセッションファイルを保存
+    | する場所を指定する必要があります。デフォルトは設定していますが、
+    | 他の場所を設定することもできます。ファイルセッションでのみ必要です。
     |
     */
 
@@ -61,12 +61,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Session Database Connection
+    | セッションデータベース接続
     |--------------------------------------------------------------------------
     |
-    | When using the "database" or "redis" session drivers, you may specify a
-    | connection that should be used to manage these sessions. This should
-    | correspond to a connection in your database configuration options.
+    | "database"か"redis"セッションドライバーを使用する場合、セッションを
+    | 管理するために使用するデータベース接続を指定する必要があります。
+    | 管理するために使用するデータベース接続を指定する必要があります。
     |
     */
 
@@ -74,12 +74,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Session Database Table
+    | セッションデータベーステーブル
     |--------------------------------------------------------------------------
     |
-    | When using the "database" session driver, you may specify the table we
-    | should use to manage the sessions. Of course, a sensible default is
-    | provided for you; however, you are free to change this as needed.
+    | "database"セッションドライバーを使用する時には、セッションを管理する
+    | テーブルを指定する必要があります。もちろん、分かりやすいデフォルトが
+    | 指定されていますが、必要であればご自由に変更してください。
     |
     */
 
@@ -87,12 +87,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Session Sweeping Lottery
+    | セッションのガベージコレクション確率
     |--------------------------------------------------------------------------
     |
-    | Some session drivers must manually sweep their storage location to get
-    | rid of old sessions from storage. Here are the chances that it will
-    | happen on a given request. By default, the odds are 2 out of 100.
+    | いくつかのセッションドライバーは情報の保存場所から古いセッションを
+    | クリーンアップする必要があります。ここでは一回のリクエストに対し
+    | どのくらいの確率で行うかを指定します。デフォルトでは100回に2回です。
     |
     */
 
@@ -100,12 +100,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Session Cookie Name
+    | セッションクッキー名
     |--------------------------------------------------------------------------
     |
-    | Here you may change the name of the cookie used to identify a session
-    | instance by ID. The name specified here will get used every time a
-    | new session cookie is created by the framework for every driver.
+    | ここではセッションインスタンスをIDで識別するために使用されるクッキーの
+    | 名前を変更できます。ここで指定された名前はフレームワークにより新しい
+    | セッションクッキーが生成されるたび、全てのドライバーに対し使用されます。
     |
     */
 
@@ -113,12 +113,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Session Cookie Path
+    | セッションクッキーパス
     |--------------------------------------------------------------------------
     |
-    | The session cookie path determines the path for which the cookie will
-    | be regarded as available. Typically, this will be the root path of
-    | your application but you are free to change this when necessary.
+    | セッションクッキーパスはクッキーが有効なパスを決定します。
+    | 典型的にはアプリケーションのルートパスを指定しますが
+    | 必要に合わせて自由に変更してください。
     |
     */
 
@@ -126,12 +126,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Session Cookie Domain
+    | セッションクッキードメイン
     |--------------------------------------------------------------------------
     |
-    | Here you may change the domain of the cookie used to identify a session
-    | in your application. This will determine which domains the cookie is
-    | available to in your application. A sensible default has been set.
+    | ここでアプリケーションのセッションを認識するために使用されるクッキーの
+    | ドメインを変更できます。これはクッキーが有効なドメインを決めるため
+    | 使用されます。デフォルト値は未定義で、納得してもらえると思います。
     |
     */
 
@@ -139,12 +139,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | HTTPS Only Cookies
+    | HTTPS専用クッキー
     |--------------------------------------------------------------------------
     |
-    | By setting this option to true, session cookies will only be sent back
-    | to the server if the browser has a HTTPS connection. This will keep
-    | the cookie from being sent to you if it can not be done securely.
+    | このオプションをtrueに設定することにより、セッションクッキーは
+    | ブラウザーがHTTPS接続されている場合のみ、送り返されてきます。
+    | これにより安全な送信が出来なければ、クッキー送信を防ぐことができます。
     |
     */
 

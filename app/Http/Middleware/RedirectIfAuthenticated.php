@@ -8,14 +8,14 @@ use Illuminate\Contracts\Auth\Guard;
 class RedirectIfAuthenticated
 {
     /**
-     * The Guard implementation.
+     * Guardの実装
      *
      * @var Guard
      */
     protected $auth;
 
     /**
-     * Create a new filter instance.
+     * 新しいフィルターインスタンス
      *
      * @param  Guard  $auth
      * @return void
@@ -26,7 +26,7 @@ class RedirectIfAuthenticated
     }
 
     /**
-     * Handle an incoming request.
+     * 送られてきたリクエストの処理
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next

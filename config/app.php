@@ -4,12 +4,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Debug Mode
+    | アプリケーションデバッグモード
     |--------------------------------------------------------------------------
     |
-    | When your application is in debug mode, detailed error messages with
-    | stack traces will be shown on every error that occurs within your
-    | application. If disabled, a simple generic error page is shown.
+    | アプリケーションをデバッグモードにすると、アプリケーションでエラーが発生する
+    | たびにスタックトレースともに、詳細なエラーメッセージが表示されます。
+    | このモードでない場合、シンプルで一般利用者向きなエラーページが表示されます。
     |
     */
 
@@ -17,12 +17,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application URL
+    | アプリケーションURL
     |--------------------------------------------------------------------------
     |
-    | This URL is used by the console to properly generate URLs when using
-    | the Artisan command line tool. You should set this to the root of
-    | your application so that it is used when running Artisan tasks.
+    | このURLはArtisanコマンドラインツールを使用する時に正しい
+    | URLを生成するために使用します。アプリケーションのルートのURLを設定してください。
+    | Artisanコマンドを実行する時に使用されます。
     |
     */
 
@@ -30,12 +30,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Timezone
+    | アプリケーションタイムゾーン
     |--------------------------------------------------------------------------
     |
-    | Here you may specify the default timezone for your application, which
-    | will be used by the PHP date and date-time functions. We have gone
-    | ahead and set this to a sensible default for you out of the box.
+    | ここではアプリケーションのデフォルトタイムゾーンを指定します。これは
+    | PHPの日付／時間関数で使用されます。最初から未設定でも使用できるように
+    | 適切なデフォルトを設定してあります。
     |
     */
 
@@ -43,12 +43,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Locale Configuration
+    | アプリケーションローカル設定
     |--------------------------------------------------------------------------
     |
-    | The application locale determines the default locale that will be used
-    | by the translation service provider. You are free to set this value
-    | to any of the locales which will be supported by the application.
+    | アプリケーションローカルは翻訳サービスプロバイダーにより使用される
+    | デフォルトローカルを指定します。アプリケーションで提供するローカルを
+    | 自由に設定してください。
     |
     */
 
@@ -56,12 +56,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Fallback Locale
+    | アプリケーションフォールバック言語
     |--------------------------------------------------------------------------
     |
-    | The fallback locale determines the locale to use when the current one
-    | is not available. You may change the value to correspond to any of
-    | the language folders that are provided through your application.
+    | フォールバック言語は現在のローカルが使用できない場合に、
+    | 代替として使われます。アプリケーション全体に対して用意されている
+    | 言語フォルダーに対応するコードであればどれでも使用可能です。
     |
     */
 
@@ -69,12 +69,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Encryption Key
+    | 暗号化キー
     |--------------------------------------------------------------------------
     |
-    | This key is used by the Illuminate encrypter service and should be set
-    | to a random, 32 character string, otherwise these encrypted strings
-    | will not be safe. Please do this before deploying an application!
+    | このキーはIlluminate暗号化サービスで使用されます。ランダムな32文字を
+    | セットしないと安全ではありません。アプリケーションをデプロイ
+    | る前に、必ず変更してください。
     |
     */
 
@@ -84,14 +84,14 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Logging Configuration
+    | ログ設定
     |--------------------------------------------------------------------------
     |
-    | Here you may configure the log settings for your application. Out of
-    | the box, Laravel uses the Monolog PHP logging library. This gives
-    | you a variety of powerful log handlers / formatters to utilize.
+    | ここではアプリケーションのログ設定を指定します。Laravelは
+    | 初めから、Monolog PHPログライブラリーを使用しています。これは便利なように、
+    | 強力でバリエーション豊かなログハンドラー／フォーマッターを提供しています。
     |
-    | Available Settings: "single", "daily", "syslog", "errorlog"
+    | 使用可能な設定： "single", "daily", "syslog", "errorlog"
     |
     */
 
@@ -99,19 +99,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Autoloaded Service Providers
+    | 自動ロードされるサービスプロバイダー
     |--------------------------------------------------------------------------
     |
-    | The service providers listed here will be automatically loaded on the
-    | request to your application. Feel free to add your own services to
-    | this array to grant expanded functionality to your applications.
+    | ここにリストしたサービスプロバイダーはアプリケーションのリクエストに対し
+    | 自動的にロードされます。アプリケーションの機能を拡張するため、この配列へ
+    | 自由に自分のサービスを付け加えてください。
     |
     */
 
     'providers' => [
 
         /*
-         * Laravel Framework Service Providers...
+         * Laravelフレームワークサービスプロバイダー
          */
         Illuminate\Foundation\Providers\ArtisanServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
@@ -138,7 +138,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
-         * Application Service Providers...
+         * アプリケーションサービスプロバイダー
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
@@ -149,12 +149,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Class Aliases
+    | クラスエイリアス
     |--------------------------------------------------------------------------
     |
-    | This array of class aliases will be registered when this application
-    | is started. However, feel free to register as many as you wish as
-    | the aliases are "lazy" loaded so they don't hinder performance.
+    | このクラスエイリアスの配列はこのアプリケーションが開始されると登録されます。
+    | エイリアスをどんなに好きなだけ自由に登録しても、「遅延」ロードされるので、
+    | パフォーマンスを妨げることはありません。
     |
     */
 

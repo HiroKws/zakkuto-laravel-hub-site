@@ -8,14 +8,14 @@ use Illuminate\Contracts\Auth\Guard;
 class Authenticate
 {
     /**
-     * The Guard implementation.
+     * Guardの実装
      *
      * @var Guard
      */
     protected $auth;
 
     /**
-     * Create a new middleware instance.
+     * 新しいミドルウェアインスタンス
      *
      * @param  Guard  $auth
      * @return void
@@ -26,7 +26,7 @@ class Authenticate
     }
 
     /**
-     * Handle an incoming request.
+     * 送られてきたリクエストの処理
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next
