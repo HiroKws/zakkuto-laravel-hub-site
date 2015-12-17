@@ -2,19 +2,24 @@
 
 namespace App\Events;
 
+use Carbon\Carbon;
 use Illuminate\Queue\SerializesModels;
 
 class Reminder extends Event
 {
     use SerializesModels;
 
+    /** @var Carbon 時間 * */
     public $time;
 
-    public $eventName;
+    /** @var string メッセージ * */
+    public $message;
 
-    public function __construct($time = null, $eventName = null)
+    public function __toString()
     {
-        $this->time      = $time;
-        $this->eventName = $eventName;
+        return '日時：'.$this->time->toDateTimeString()
+            ."\n"
+            .'内容：'.$this->message
+            ."\n";
     }
 }

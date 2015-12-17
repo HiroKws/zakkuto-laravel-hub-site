@@ -2,27 +2,27 @@
 
 namespace App\Providers;
 
+use App\Events\Reminder;
+use App\Listeners\EchoEvent;
+use App\Listeners\EchoEvent2;
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider
 {
     /**
-     * アプリケーションのイベントリスナーのマップ
+     * アプリケーションのイベントリスナーのマップ.
      *
      * @var array
      */
     protected $listen = [
-        'App\Events\SomeEvent' => [
-            'App\Listeners\EventListener',
-        ],
+        Reminder::class => [EchoEvent::class, EchoEvent2::class],
     ];
 
     /**
-     * アプリケーションのその他のイベントの登録
+     * アプリケーションのその他のイベントの登録.
      *
-     * @param  \Illuminate\Contracts\Events\Dispatcher  $events
-     * @return void
+     * @param \Illuminate\Contracts\Events\Dispatcher $events
      */
     public function boot(DispatcherContract $events)
     {
