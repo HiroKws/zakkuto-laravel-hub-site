@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('__')) {
+if (! function_exists('__')) {
     function __($message)
     {
         if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
