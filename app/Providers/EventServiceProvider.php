@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\HubConnections\Events\FeedPosted;
 use App\HubConnections\Events\MailPosted;
 use App\HubConnections\Events\Reminder;
 use App\HubConnections\Listeners\CardSender;
@@ -22,6 +23,7 @@ class EventServiceProvider extends ServiceProvider
         Reminder::class                   => [ChatSender::class],
         MailPosted::class                 => [EchoEvent::class],
         'App\HubConnections\Events\Card*' => [CardSender::class],
+        FeedPosted::class                 => [EchoEvent::class],
     ];
 
     /**
