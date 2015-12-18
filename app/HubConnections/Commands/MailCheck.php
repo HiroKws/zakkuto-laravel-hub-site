@@ -27,7 +27,7 @@ class MailCheck extends BaseCommand
         // 新メールチェック
         if ($this->notifire->run() === false)
         {
-            $this->error('Connection faild.');
+            $this->error('Connection failed.');
             return 1; // 異常終了(Not 0)
         }
 
