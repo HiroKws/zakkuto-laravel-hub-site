@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\HubConnections\Events\MailPosted;
 use App\HubConnections\Events\Reminder;
+use App\HubConnections\Listeners\CardSender;
 use App\HubConnections\Listeners\MailSender;
 use App\Listeners\EchoEvent;
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
@@ -17,9 +18,9 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        Reminder::class   => [MailSender::class],
-        MailPosted::class => [EchoEvent::class],
-        'App\HubConnections\Events\Card*' => [EchoEvent::class],
+        Reminder::class                   => [MailSender::class],
+        MailPosted::class                 => [EchoEvent::class],
+        'App\HubConnections\Events\Card*' => [CardSender::class],
     ];
 
     /**
