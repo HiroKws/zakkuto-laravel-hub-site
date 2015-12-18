@@ -19,6 +19,7 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [
         Reminder::class   => [MailSender::class],
         MailPosted::class => [EchoEvent::class],
+        'App\HubConnections\Events\Card*' => [EchoEvent::class],
     ];
 
     /**

@@ -2,6 +2,7 @@
 
 namespace App\Console;
 
+use App\HubConnections\Commands\CheckTrello;
 use App\HubConnections\Commands\MailCheck;
 use App\HubConnections\Commands\Reminder;
 use Illuminate\Console\Scheduling\Schedule;
@@ -12,6 +13,7 @@ class Kernel extends ConsoleKernel
     protected $commands = [
         Reminder::class,
         MailCheck::class,
+        CheckTrello::class,
     ];
 
     protected function schedule(Schedule $schedule)
