@@ -9,5 +9,6 @@ class EchoEvent
     public function handle(Event $event)
     {
         echo __($event);
+        \Log::info($event);
     }
 }
