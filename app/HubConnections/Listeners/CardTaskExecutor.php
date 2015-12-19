@@ -2,7 +2,6 @@
 
 namespace App\HubConnections\Listeners;
 
-use Illuminate\Contracts\Queue\ShouldQueue;
 use App\HubConnections\Events\CardTaskKicked;
 use App\Services\CommandExecutor as Executor;
 use App\Services\JsonArrayConverter as Converter;
@@ -12,7 +11,7 @@ use App\Services\JsonPutter;
 /**
  * Trelloカード上のタスク実行リスナー
  */
-class CardTaskExecutor implements ShouldQueue
+class CardTaskExecutor
 {
     /** @var JsonPutter */
     private $putter;
