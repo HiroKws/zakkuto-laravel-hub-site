@@ -1,8 +1,6 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
-    "license": "MIT",
+    "name": "hirokws/zakkuto-laravel-hub-site-codes",
+    "description": "PHP codes on Laravel PHP framework for e-book : 「ザクッとLaravel、Hubサイトでチュートリアル」.",
     "type": "project",
     "require": {
         "php": ">=5.5.9",
