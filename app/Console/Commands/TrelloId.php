@@ -9,7 +9,7 @@ use Carbon\Carbon;
 
 class TrelloId extends BaseCommand
 {
-    protected $signature = 'trello:id'
+    protected $signature = 'trello:id '
         .'{--b|board : Show all board id} '
         .'{--l|list : Show all list id} '
         .'{--c|card : Show all card id}';
