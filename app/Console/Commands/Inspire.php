@@ -3,10 +3,12 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Foundation\Inspiring;
+use Illuminate\Foundation\Bus\DispatchesJobs;
 
 class Inspire extends Command
 {
+    use DispatchesJobs;
+
     /**
      * コンソールコマンドの識別名
      *
@@ -28,6 +30,6 @@ class Inspire extends Command
      */
     public function handle()
     {
-        $this->comment(PHP_EOL.Inspiring::quote().PHP_EOL);
+        $this->dispatch(new \App\Jobs\TestJob());
     }
 }

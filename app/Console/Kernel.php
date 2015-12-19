@@ -2,6 +2,7 @@
 
 namespace App\Console;
 
+use App\Console\Commands\Inspire;
 use App\Console\Commands\TrelloId;
 use App\HubConnections\Commands\CheckRss;
 use App\HubConnections\Commands\CheckTrello;
@@ -22,6 +23,7 @@ class Kernel extends ConsoleKernel
         TrelloId::class,
         SiteCheck::class,
         DoTasks::class,
+        Inspire::class,
     ];
 
     protected function schedule(Schedule $schedule)
