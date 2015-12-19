@@ -2,10 +2,12 @@
 
 namespace App\Providers;
 
+use App\HubConnections\Events\CardTaskKicked;
 use App\HubConnections\Events\FeedPosted;
 use App\HubConnections\Events\MailPosted;
 use App\HubConnections\Events\Reminder;
 use App\HubConnections\Listeners\CardSender;
+use App\HubConnections\Listeners\CardTaskExecutor;
 use App\HubConnections\Listeners\ChatSender;
 use App\HubConnections\Listeners\MailSender;
 use App\HubConnections\Listeners\SiteMonitoring\MonitoringUpdater;
@@ -26,6 +28,7 @@ class EventServiceProvider extends ServiceProvider
         'App\HubConnections\Events\Card*'                => [CardSender::class],
         FeedPosted::class                                => [EchoEvent::class],
         'App\HubConnections\Events\SiteMonitoring\Site*' => [MonitoringUpdater::class],
+        CardTaskKicked::class                            => [CardTaskExecutor::class],
     ];
 
     /**
