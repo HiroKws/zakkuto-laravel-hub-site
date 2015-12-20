@@ -2,6 +2,9 @@
 
 namespace App\HubConnections\Events;
 
+/**
+ * Wunderlist、毎日のタスクコピー起動イベント
+ */
 class CopyTasksKicked extends HubConnectionBaseEvent
 {
     public function __toString()

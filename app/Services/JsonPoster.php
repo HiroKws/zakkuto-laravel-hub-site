@@ -19,14 +19,15 @@ class JsonPoster
         $this->log = $log;
     }
 
-    public function post($url, $data = [])
+    public function post($url, $data = [], $header = [])
     {
         // curlで接続
         $curl = curl_init($url);
 
         // オプションとデーター指定
-        $options = [
-            CURLOPT_HTTPHEADER     => ['Content-type: application/json', ],
+        $header[] = 'Content-type: application/json';
+        $options  = [
+            CURLOPT_HTTPHEADER     => $header,
             CURLOPT_POST           => true,
             CURLOPT_POSTFIELDS     => json_encode($data),
             // curl_execの戻り値に取得結果反映
@@ -39,7 +40,8 @@ class JsonPoster
         $info   = curl_getinfo($curl);
         curl_close($curl);
 
-        if ($result === false || $info['http_code'] != 200) {
+        if ($result === false ||
+            !($info['http_code'] == 200 || $info['http_code'] == 201)) {
             $this->log->warning('POST通信できませんでした。URL:'.$url
                 .' Code:'.$info['http_code']);
 

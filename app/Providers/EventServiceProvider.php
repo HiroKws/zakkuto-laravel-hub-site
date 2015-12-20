@@ -10,6 +10,7 @@ use App\HubConnections\Events\Reminder;
 use App\HubConnections\Listeners\CardSender;
 use App\HubConnections\Listeners\CardTaskExecutor;
 use App\HubConnections\Listeners\ChatSender;
+use App\HubConnections\Listeners\CopyEverydayTasks;
 use App\HubConnections\Listeners\MailSender;
 use App\HubConnections\Listeners\SiteMonitoring\MonitoringUpdater;
 use App\Listeners\EchoEvent;
@@ -30,7 +31,7 @@ class EventServiceProvider extends ServiceProvider
         FeedPosted::class                                => [EchoEvent::class],
         'App\HubConnections\Events\SiteMonitoring\Site*' => [MonitoringUpdater::class],
         CardTaskKicked::class                            => [CardTaskExecutor::class],
-        CopyTasksKicked::class => [EchoEvent::class],
+        CopyTasksKicked::class                           => [CopyEverydayTasks::class],
     ];
 
     /**

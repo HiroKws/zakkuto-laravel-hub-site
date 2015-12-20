@@ -17,13 +17,14 @@ class JsonGetter
         $this->log = $log;
     }
 
-    public function get($url)
+    public function get($url, $header = [])
     {
         // curlで接続
         $curl = curl_init($url);
 
         // オプション指定
         $options = [
+            CURLOPT_HTTPHEADER     => $header,
             // curl_execの戻り値に取得結果反映
             CURLOPT_RETURNTRANSFER => true,
         ];
