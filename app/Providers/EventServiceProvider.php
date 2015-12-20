@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\HubConnections\Events\CardTaskKicked;
+use App\HubConnections\Events\CopyTasksKicked;
 use App\HubConnections\Events\FeedPosted;
 use App\HubConnections\Events\MailPosted;
 use App\HubConnections\Events\Reminder;
@@ -29,6 +30,7 @@ class EventServiceProvider extends ServiceProvider
         FeedPosted::class                                => [EchoEvent::class],
         'App\HubConnections\Events\SiteMonitoring\Site*' => [MonitoringUpdater::class],
         CardTaskKicked::class                            => [CardTaskExecutor::class],
+        CopyTasksKicked::class => [EchoEvent::class],
     ];
 
     /**

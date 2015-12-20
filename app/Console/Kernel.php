@@ -4,6 +4,7 @@ namespace App\Console;
 
 use App\Console\Commands\Inspire;
 use App\Console\Commands\TrelloId;
+use App\HubConnections\Commands\CopyEverydayTasks;
 use App\HubConnections\Commands\CheckRss;
 use App\HubConnections\Commands\CheckTrello;
 use App\HubConnections\Commands\DoTasks;
@@ -24,6 +25,7 @@ class Kernel extends ConsoleKernel
         SiteCheck::class,
         DoTasks::class,
         Inspire::class,
+        CopyEverydayTasks::class,
     ];
 
     protected function schedule(Schedule $schedule)
