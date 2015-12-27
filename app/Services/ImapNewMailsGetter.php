@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Exceptions\RuntimeException;
+use App\HubConnection\Exceptions\RuntimeException;
 use Ddeboer\Imap\Search\Flag\Unseen;
 use Ddeboer\Imap\SearchExpression;
 use Ddeboer\Imap\Server;
